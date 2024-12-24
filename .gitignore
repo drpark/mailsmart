@@ -1,3 +1,4 @@
 *.env
 *__pycache*
 /spam/spam.joblib
+/emotions/roberta/emotions

@@ -27,6 +27,6 @@ ENV DB_NAME=mailsmart
 
 
 # Exposer le port
-EXPOSE 80
+EXPOSE 8000
 # Lancer l'application avec uvicorn intégré à FastAPI
-CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

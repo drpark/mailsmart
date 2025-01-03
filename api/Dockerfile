@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt --verbose
 
-# Installer le modèle spaCy
+# Installer le module spaCy
 RUN python -m spacy download en_core_web_sm
 
 # Copier le code source uniquement, les models sont téléchargés à l'exécution
